@@ -1,0 +1,13 @@
+name = "is-sexism-over-in-tech"
+
+main = "./server.js"
+workers_dev = true
+# https://developers.cloudflare.com/workers/platform/compatibility-dates
+compatibility_date = "2023-04-20"
+compatibility_flags = [ "nodejs_compat" ]
+
+[site]
+bucket = "./build/client"
+
+[build]
+command = "npm run build"
